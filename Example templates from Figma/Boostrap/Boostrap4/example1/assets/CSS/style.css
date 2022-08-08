@@ -129,6 +129,7 @@ section {
 /* Blurred circles */
 .blured-section:after,
 .blured-section:before {
+    z-index: 0;
     content: '';
     position: absolute;
     filter: blur(300px);
@@ -461,6 +462,10 @@ section {
 .blog-date {
     color: #D7D7D7;
     font: normal 400 14px/19px 'Open Sans', sans-serif;
+}
+
+.card-body-bottom .col {
+    z-index: 2;
 }
 
 .card-body-bottom .btn {
