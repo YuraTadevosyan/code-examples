@@ -1,6 +1,6 @@
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-import {signInWithEmailAndPassword, getAuth} from "firebase/auth";
+import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
 
 // Helmet
 import { Helmet } from 'react-helmet';
