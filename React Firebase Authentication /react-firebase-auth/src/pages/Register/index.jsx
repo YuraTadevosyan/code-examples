@@ -1,6 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 
-import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
+import { auth, db } from 'firebase-config'
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { addDoc, collection } from 'firebase/firestore';
 
 // Form
 import { Formik, Field, Form, ErrorMessage } from 'formik';
@@ -8,11 +10,6 @@ import * as Yup from 'yup';
 
 // Helmet
 import { Helmet } from 'react-helmet';
-
-import {addDoc, collection} from "firebase/firestore";
-
-import { db } from 'firebase-config'
-
 
 const Register = () => {
 
@@ -52,14 +49,16 @@ const Register = () => {
 
     const formRegistration = (formValue) => {
         const { name, email, password } = formValue;
-        console.log(name, email, password)
 
-        const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password)
             .then(({user}) => {
-                addDoc(collection(db, 'users'), {
+                addDoc(collection(db, "users"), {
+                    id: user.uid,
                     name,
-                }).then(() => console.log('success'))
+                    email,
+                })
+                    .then(res => console.log(res))
+                    .catch(err => console.log(err))
 
                 navigate('/sign-in');
             })
