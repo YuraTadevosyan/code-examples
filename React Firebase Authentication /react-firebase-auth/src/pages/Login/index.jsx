@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
-import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { auth } from 'firebase-config'
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 // Helmet
 import { Helmet } from 'react-helmet';
@@ -37,10 +38,8 @@ const Login = () => {
     const handleLogin = (formValue) => {
         const { email, password } = formValue;
 
-        const auth = getAuth();
         signInWithEmailAndPassword(auth, email, password)
             .then(({user}) => {
-                console.log(user);
                 navigate('/profile');
             })
             .catch(console.error)
