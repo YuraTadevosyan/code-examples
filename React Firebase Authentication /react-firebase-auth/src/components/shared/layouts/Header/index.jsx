@@ -1,6 +1,22 @@
+import {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 
+import { auth } from 'firebase-config'
+import { signOut, onAuthStateChanged } from 'firebase/auth';
+
 const Header = () => {
+    const [isLogged, setIsLogged] = useState(false);
+
+    useEffect(() => {
+        onAuthStateChanged(auth, authUser => {
+            if(!authUser) return setIsLogged(false)
+            return setIsLogged(true)
+        });
+    }, [isLogged])
+
+    const handleLogout = () => {
+        signOut(auth).then(() => console.log('User is Logged Out'));
+    }
 
     return (
         <>
@@ -16,8 +32,17 @@ const Header = () => {
                     </Link>
 
                     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                        <Link to="/sign-up" className="mr-5 text-white hover:text-gray-200">Sign up</Link>
-                        <Link to="/sign-in" className="mr-5 text-white hover:text-gray-200">Sign in</Link>
+                        {!isLogged ? (
+                            <>
+                                <Link to="/sign-up" className="mr-5 text-white hover:text-gray-200">Sign up</Link>
+                                <Link to="/sign-in" className="mr-5 text-white hover:text-gray-200">Sign in</Link>
+                            </>
+                        ) : (
+                            <>
+                                <Link to="/" className="mr-5 text-white hover:text-gray-200" onClick={handleLogout}>Log out</Link>
+                                <Link to="/profile" className="mr-5 text-white hover:text-gray-200">Profile</Link>
+                            </>
+                        )}
                     </nav>
                 </div>
             </header>
