@@ -66,6 +66,7 @@ const Login = () => {
                                     name="email"
                                     type="email"
                                     placeholder="Email"
+                                    autocomplete="off"
                                     className="form-control block border-2 text-indigo-400 placeholder-indigo-400 border-indigo-400 w-full p-3 rounded-lg mb-2 outline-0"
                                 />
                                 <ErrorMessage
@@ -77,6 +78,7 @@ const Login = () => {
                                 <Field
                                     name="password"
                                     type="password"
+                                    autocomplete="off"
                                     placeholder="Password"
                                     className="form-control block border-2 text-indigo-400 placeholder-indigo-400 border-indigo-400 w-full p-3 rounded-lg mb-2 outline-0"
                                 />
