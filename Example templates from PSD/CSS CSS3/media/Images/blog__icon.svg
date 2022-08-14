@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 16" width="48" height="16">
+	<title></title>
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 18px;line-height: 28px;fill: #adb0ba;font-weight: 400;font-family: "Roboto-Regular", "Roboto" } 
+		.txt1 { font-size: 18px;line-height: 28px;fill: #adb0ba;font-family: "Font Awesome" } 
+	</style>
+	<text id="22 " style="transform: matrix(1,0,0,1,28,14)" >
+		<tspan x="0" y="0" class="txt0">22
+</tspan>
+	</text>
+	<text id="" style="transform: matrix(1,0,0,1,0,14)" >
+		<tspan x="0" y="0" class="txt1"></tspan><tspan  y="0" class="txt1">
+</tspan>
+	</text>
+</svg>
