@@ -1,32 +1,47 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app>
+    <left-bar @toggleSidebar="toggleSidebar" ref="leftBarComponent"/>
+
+    <Header
+        @openSidebar="openSideBar"
+        ref="headerComponent"
+        :class="{isFullScreen : isFullScreen}"
+    />
+
+    <v-main
+        id="main"
+        :class="{isFullScreen : isFullScreen}"
+    >
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Header from "./components/layout/Header";
+import LeftBar from "./components/layout/LeftBar";
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  name: 'App',
+  components: {
+    Header,
+    LeftBar
+  },
+  data: () => ({
+    active: 'active',
+    isFullScreen: false,
+  }),
+  computed: {
+  },
+  methods: {
+    openSideBar(value) {
+      this.isFullScreen = !value;
+      this.$refs.leftBarComponent.toggle(value)
+    },
+    toggleSidebar(value) {
+      this.isFullScreen = !this.isFullScreen;
+      this.$refs.leftBarComponent.toggle(value)
+    },
   }
 }
-</style>
+</script>
