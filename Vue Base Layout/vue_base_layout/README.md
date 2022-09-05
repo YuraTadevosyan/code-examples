@@ -1,4 +1,11 @@
-# vue_base_layout
+# Vue Base Layout
+
+Vue Base Layout - Sidebar, Header and Main.
+
+## Used Technologies
+- Vue 2
+- Vuetify
+- Vue Router
 
 ## Project setup
 ```
