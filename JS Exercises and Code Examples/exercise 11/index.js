@@ -33,8 +33,15 @@ function toChineseNumeral(num){
     }
 
     let splitNum = `${num}`.split('')
-    const dotIndex = splitNum.indexOf('.')
     const isDotExist = splitNum.includes('.')
+
+    if (isDotExist && parseInt(num) % 10 === 0 && parseInt(num) > 0) {
+        result += numerals[parseInt(num)]
+        splitNum = `.${`${num}`.split('.')[1]}`.split('')
+    }
+
+    const dotIndex = splitNum.indexOf('.')
+
     splitNum.map((el, index, arr) => {
         if (index !== arr.length - 1  && arr[index + 1] != 0 && el == 0) {
             return result += numerals[0]
