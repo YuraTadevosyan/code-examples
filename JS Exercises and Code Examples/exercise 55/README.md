@@ -1,4 +1,4 @@
-# Exercise 54
+# Exercise 55
 
 ## Debug Sum of Digits of a Number
 
