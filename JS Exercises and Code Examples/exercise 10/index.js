@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function anagrams(word, words) {
     let sortedWord = word.split('').sort().join('');

@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function solution(number){
     let sum = 0;
