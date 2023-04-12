@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 snail = function(array) {
     let middle = array.slice(1, array.length - 1).map(row => row.slice(1, row.length - 1));
