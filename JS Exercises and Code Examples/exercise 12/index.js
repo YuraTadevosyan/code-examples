@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function expression(number, operation){
     if(!operation)

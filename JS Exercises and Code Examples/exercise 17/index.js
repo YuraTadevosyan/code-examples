@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function incrementString (strng) {
     let reversestring = reverseString(strng);

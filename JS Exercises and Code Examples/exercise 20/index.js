@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 Array.prototype.sameStructureAs = function (other) {
     let isSame = true
