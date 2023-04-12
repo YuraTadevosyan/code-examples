@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function cakes(recipe, available) {
     let count = 0;

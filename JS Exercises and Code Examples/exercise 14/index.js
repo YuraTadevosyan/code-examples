@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function int32ToIp(int32){
     let str = ``;

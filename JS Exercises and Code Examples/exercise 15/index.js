@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function alphanumeric(string){
     if (string.length == 0) return false;
