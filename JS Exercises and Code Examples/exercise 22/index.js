@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function angle(n) {
     return (n - 2) * 180
