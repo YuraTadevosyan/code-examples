@@ -1,2 +1,2 @@
-// Check Readme.ms file
+// Check Readme.md file
 const quarterOf = (month) => Math.ceil(month / 3)

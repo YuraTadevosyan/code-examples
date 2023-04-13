@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 function removeZeros(array) {
     for(let j = 0; j < getZeroCount(array); j++) {

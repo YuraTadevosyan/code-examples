@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 
 var isAnagram = function(test, original) {
     const sortedTest = test.toLowerCase().split('').sort().join('');
