@@ -1,2 +1,2 @@
-// Check Readme.ms file
+// Check Readme.md file
 const shortcut = (string) => string.replace(/[aeiou]/gi, '')
