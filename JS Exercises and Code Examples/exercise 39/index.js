@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 const sum = (num, initial) => num.toString().split('').reduce((acc, cur) => +acc + +cur,initial)
 
 function digitalRoot(n) {

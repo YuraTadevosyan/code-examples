@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 function alphabet(ns) {
     let D;
     const CD = Math.max(...ns);
