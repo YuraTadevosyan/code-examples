@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 const sort = (num) => num.toString().split('').sort((a, b) => a - b ).join('')
 
 function findLowestInt(k) {
