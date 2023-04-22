@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 function perfectSquare(string){
     const slashN = string.split('.').filter(Boolean);
     const dots = string.split('\n');

@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 const epley = (w, r) => w * (1 + r / 30)
 const mcglothin = (w, r) => 100 * w / (101.3 - 2.67123 * r)
 const lombardi = (w, r) => w * Math.pow(r, 0.1)

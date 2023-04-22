@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 function nthFibo(n) {
     if (n > 0 && n <= 2) {
         return n - 1
