@@ -1,4 +1,4 @@
-// Check Readme.ms file
+// Check Readme.md file
 function solve(s){
     let upperCaseCount = 0
     let lowerCaseCount = 0
