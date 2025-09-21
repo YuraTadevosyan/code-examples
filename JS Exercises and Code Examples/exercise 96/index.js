@@ -1,4 +1,5 @@
 // Check Readme.md file
+
 const grader = (score) => {
     switch (`${score}`.slice(0, 3)) {
         case '0.6':
