@@ -2,15 +2,15 @@
 const grader = (score) => {
     switch (`${score}`.slice(0, 3)) {
         case '0.6':
-            return 'D'
+            return 'D';
         case '0.7':
-            return 'C'
+            return 'C';
         case '0.8':
-            return 'B'
+            return 'B';
         case '0.9':
         case '1':
-            return 'A'
+            return 'A';
         default:
-            return 'F'
+            return 'F';
     }
 }
