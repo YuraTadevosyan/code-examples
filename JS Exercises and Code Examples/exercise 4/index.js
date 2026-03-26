@@ -1,7 +1,7 @@
 // Check Readme.md file
 
 function getCount(str) {
-    let vowelsCount = 0;
+    let vowelsCount = 0
 
     for (let i = 0; i < str.length; i++ ) {
         if (
@@ -10,9 +10,9 @@ function getCount(str) {
             str[i] === 'i' ||
             str[i] === 'o' ||
             str[i] === 'u') {
-            vowelsCount++;
+            vowelsCount++
         }
     }
 
-    return vowelsCount;
+    return vowelsCount
 }
