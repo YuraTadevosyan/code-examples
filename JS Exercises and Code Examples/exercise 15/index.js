@@ -1,13 +1,10 @@
 // Check Readme.md file
 
-function alphanumeric(string){
-    if (string.length == 0) return false;
+function alphanumeric(string) {
+    if (string.length == 0) return false
 
-    let regex = /^[a-zA-Z0-9]*$/;
+    const regex = /^[a-zA-Z0-9]*$/
 
-    if (string.match(regex)) {
-        return true;
-    }
-    return false
+    return string.match(regex)
 
 }
