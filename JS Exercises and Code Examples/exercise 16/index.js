@@ -3,10 +3,10 @@
 function sumTwoSmallestNumbers(numbers) {
     let sum = 0;
 
-    sum += getSmallestElement(numbers);
+    sum += getSmallestElement(numbers)
 
     if(numbers.length > 2) {
-        let removeFfirstSmallest = numbers.splice(numbers.indexOf(sum),1);
+        let removeFfirstSmallest = numbers.splice(numbers.indexOf(sum), 1)
 
         sum += getSmallestElement(numbers)
     }
