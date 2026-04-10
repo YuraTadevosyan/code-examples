@@ -1,7 +1,8 @@
 // Check Readme.md file
 
 function cakes(recipe, available) {
-    let count = 0;
+    let count = 0
+    
     Object.keys(recipe).forEach((el, index) => {
         if (!Object.keys(available).includes(el)) return count = 0
 
@@ -9,5 +10,5 @@ function cakes(recipe, available) {
 
     })
 
-    return count;
+    return count
 }
