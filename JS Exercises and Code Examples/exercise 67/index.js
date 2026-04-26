@@ -1,2 +1,2 @@
 // Check Readme.md file
-const otherAngle = (a, b) => 180 - a - b;
+const otherAngle = (a, b) => 180 - a - b
