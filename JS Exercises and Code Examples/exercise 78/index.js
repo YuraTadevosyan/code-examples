@@ -13,5 +13,5 @@ function to24hourtime(hour, minute, period) {
     hours = '12'
   }
 
-  return hours + minutes;
+  return hours + minutes
 }
