@@ -1,2 +1,2 @@
 // Check Readme.md file
-const distinct = (a) => [...new Set(a)];
+const distinct = (a) => [...new Set(a)]
